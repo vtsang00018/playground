@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Food Bucketlist</title>
+</head>
+<body>
+	<script>
+  		window.fbAsyncInit = function() {
+    			FB.init({
+      				appId      : '1030706586965286',
+      				xfbml      : true,
+      				version    : 'v2.6'
+    			});
+  		};
+
+  		(function(d, s, id){
+     			var js, fjs = d.getElementsByTagName(s)[0];
+     			if (d.getElementById(id)) {return;}
+			     js = d.createElement(s); js.id = id;
+			     js.src = "//connect.facebook.net/en_US/sdk.js";
+			     fjs.parentNode.insertBefore(js, fjs);
+   			}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
+
+	<header class="cd-main-header">
+		<a href="#0" class="cd-logo"> Food Bucket</a>
+		
+		<div class="cd-search is-hidden">
+			<form action="#0">
+				<input type="search" placeholder="Search...">
+			</form>
+		</div> <!-- cd-search -->
+
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+	</header> <!-- .cd-main-header -->
+
+	<main id="parent" class="cd-main-content">
+		<nav class="cd-side-nav" id="side">
+			<ul>
+				<li class="cd-label">Login</li>
+				<div class="fb-login-button " data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="true"></div>
+
+			</ul>	
+			<ul>
+				<li class="cd-label">My BucketList</li>
+				<li class="has-children overview">
+					<a href="#0">Restaurants</a>
+					
+					<ul>
+						<li><a href="#0">All Data</a></li>
+						<li><a href="#0">Category 1</a></li>
+						<li><a href="#0">Category 2</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul>
+				<li class="cd-label">Group Bucktlist</li>
+				<li class="has-children overview">
+					<a href="#0">Food Friends</a>
+					
+					<ul>
+						<li><a href="#0">All Data</a></li>
+						<li><a href="#0">Category 1</a></li>
+						<li><a href="#0">Category 2</a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul>
+				<li class="cd-label">Recommendations</li>
+				<li class="action-btn"><a href="#0">Find Restaurants</a></li>
+			</ul>
+
+			<ul>
+				<li class="cd-label">Friends</li>
+				<li class="action-btn"><a href="#0">Add Friends</a></li>
+			</ul>
+		</nav>
+		<div class="content-wrapper">
+			<!-- Import Google Maps -->
+			<div id="map">MAP</div>
+		</div> <!-- .content-wrapper -->
+	</main> <!-- .cd-main-content -->
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize"></script>
+
+</body>
+</html>
